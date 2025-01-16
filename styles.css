@@ -44,7 +44,7 @@ main {
     width: 100%;
     border: 1px solid #e0e0e0;
     padding-bottom: 20px;
-    margin-bottom: 20px; /* Ensure proper spacing below */
+    margin-bottom: 20px; 
 }
 
 .mood-input h2 {
@@ -126,10 +126,10 @@ button:hover {
     border-radius: 10px;
     width: 100%;
     border: 1px solid #e0e0e0;
-    height: 300px; /* Fixed height for scrollable area */
-    overflow-y: auto; /* Enable vertical scrolling */
+    height: 300px; 
+    overflow-y: auto; 
     position: relative;
-    z-index: 0; /* Ensure it is below the sticky header */
+    z-index: 0; 
 }
 
 /* Sticky Header for Timeline */
@@ -139,16 +139,16 @@ button:hover {
     top: 0;
     background-color: #ffffff;
     padding: 10px 0;
-    z-index: 10; /* Ensure the header stays on top */
+    z-index: 10; 
     border-bottom: 1px solid #e0e0e0;
-    margin: 0; /* Remove margin to avoid unnecessary gaps */
+    margin: 0; 
 }
 
 /* Timeline List */
 #timeline-list {
     list-style: none;
     padding: 0;
-    margin: 0; /* Remove default list margins */
+    margin: 0; 
 }
 
 #timeline-list li {
@@ -168,11 +168,10 @@ button:hover {
     color: #000000;
 }
 
-/* Fixing the Gap Issue */
 .mood-input {
-    margin-bottom: 0; /* Ensure no gap below the mood input section */
+    margin-bottom: 0; 
 }
 
 .timeline {
-    margin-top: 0; /* Remove any potential gap above the timeline */
+    margin-top: 0; 
 }

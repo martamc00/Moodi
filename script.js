@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const addToTimeline = (mood, note, date) => {
         const li = document.createElement("li");
         li.innerHTML = `<strong>${date}:</strong> ${mood} - ${note}`;
-        timelineList.prepend(li); // Add to the top of the list
+        timelineList.prepend(li); 
     };
 
     // Save mood and note
@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Save to localStorage
         const savedMoods = JSON.parse(localStorage.getItem("moods")) || [];
-        savedMoods.unshift({ mood, note, date }); // Add new note to the beginning
+        savedMoods.unshift({ mood, note, date }); 
         localStorage.setItem("moods", JSON.stringify(savedMoods));
 
-        // Clear note input
+  
         moodNote.value = "";
     });
 
