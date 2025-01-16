@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Mood Journal</title>
+</head>
+<body>
+    <header>
+        <h1>Moodi</h1>
+    </header>
+    <main>
+        <div class="mood-input">
+            <h2>How do you feel?</h2>
+            <input type="range" min="1" max="5" id="mood-slider">
+            <div id="mood-display">😐</div>
+            <textarea id="mood-note" placeholder="Write about it..." rows="4"></textarea>
+            <button id="add-mood">Add</button>
+        </div>
+        <div class="timeline">
+            <h2>Your Mood Timeline</h2>
+            <ul id="timeline-list"></ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

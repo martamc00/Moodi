@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333333;
+ 
+
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #0e0e0e;
+}
+
+header h1 {
+    color: #e0e0e0;
+    font-size: 2rem;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Mood Input Section */
+.mood-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px; /* Ensure proper spacing below */
+}
+
+.mood-input h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Mood Slider */
+#mood-slider {
+    width: 100%;
+    margin: 15px 0;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: linear-gradient(to right, #ff5f5f, #ffdd57, #9acd32, #4682b4, #8a2be2);
+    border-radius: 3px;
+    outline: none;
+}
+
+#mood-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#mood-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+#mood-display {
+    font-size: 3rem;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Mood Note Input */
+#mood-note {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+    background-color: #faeee6;
+}
+
+#mood-note:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+/* Button Styling */
+button {
+    background-color: #0e0e0e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+/* Timeline Section */
+.timeline {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    height: 300px; /* Fixed height for scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: relative;
+    z-index: 0; /* Ensure it is below the sticky header */
+}
+
+/* Sticky Header for Timeline */
+.timeline h2 {
+    color: #000000;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    padding: 10px 0;
+    z-index: 10; /* Ensure the header stays on top */
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0; /* Remove margin to avoid unnecessary gaps */
+}
+
+/* Timeline List */
+#timeline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove default list margins */
+}
+
+#timeline-list li {
+    background: #faeee6;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+#timeline-list li:hover {
+    transform: scale(1.02);
+}
+
+#timeline-list li strong {
+    color: #000000;
+}
+
+/* Fixing the Gap Issue */
+.mood-input {
+    margin-bottom: 0; /* Ensure no gap below the mood input section */
+}
+
+.timeline {
+    margin-top: 0; /* Remove any potential gap above the timeline */
+}
